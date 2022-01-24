@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Code and Decode</title>
+</head>
+
+<body class="contain">
+
+    <header class="titulo">
+        <h1>Code&Decode</h1>
+    </header>
+
+    <main class="principal">
+        <select name="opcao" class="escolha">
+            <option>Selecione</option>
+            <option value="cesar">Cifra de Cesar</option>
+            <option value="base">Base64</option>
+        </select>
+
+        <br><br>
+        <label class="incremento" style="display: none">Incremento:<input type="number" id="numero"
+                style="display: none;"></label>
+
+        <div> <br>
+            <label for="mensagem"></label>
+            <textarea name="caixaDeTexto" class="primeiraMsg" cols="50" rows="5" placeholder="Digite sua mensagem"
+                required></textarea>
+        </div>
+
+        <div class="codigo"> <br>
+            <label for="codificar">
+                <input type="radio" name="check" id="codificar">Codificar
+            </label>
+            <label for="decodificar">
+                <input type="radio" name="check" id="decodificar">Decodificar
+            </label>
+        </div> <br>
+
+        <button id="btn" class="botao"> Resultado
+        </button> <br>
+
+        <div>
+            <label for="mensagem"></label>
+            <textarea name="caixaDeTexto" class="segundaMsg" cols="50" rows="5"
+                placeholder="Aqui está sua mensagem"></textarea>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p> &reg; &copy; Created by Madalena. All right reserved
+            <a href="https://github.com/Mada-k" target="_blank">
+                <img src="./github.png" alt="" class="gitHub">
+            </a>
+        </p>
+
+    </footer>
+
+    <script src="codigo.js"></script>
+
+</body>
+
+</html>
